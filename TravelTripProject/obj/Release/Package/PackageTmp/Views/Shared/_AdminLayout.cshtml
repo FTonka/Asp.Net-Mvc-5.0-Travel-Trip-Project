@@ -1,0 +1,43 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:15%">
+        <h3 class="w3-bar-item">Menü</h3>
+        <a href="/Admin/Index/" class="w3-bar-item w3-button">Bloglar</a>
+        <a href="/Admin/Comments/" class="w3-bar-item w3-button">Yorumlar</a>
+        <a href="#" class="w3-bar-item w3-button">Hakkımızda</a>
+        <a href="#" class="w3-bar-item w3-button">İletişim</a>
+        <a href="/Default/Index/" class="w3-bar-item w3-button">Siteye Git</a>
+        <a href="/Login/LogOut/" class="w3-bar-item w3-button">Çıkış Yap</a>
+    </div>
+
+    <!-- Page Content -->
+    <div style="margin-left:15%">
+
+        <div class="w3-container w3-teal">
+            <h4 style="text-align:center;font-size:35px">Admin Yönetim Paneli</h4>
+            
+        </div>
+        <br />
+
+        <div class="w3-container">
+            @RenderBody()
+        </div>
+
+    </div>
+
+</body>
+</html>
+
